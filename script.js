@@ -53,3 +53,10 @@ function occupationToJob(arr) {
   });
   console.log(arr);
 }
+function getAges(arr) {
+  const totalAge = arr.reduce((total, current) => {
+    return total + Number(current.age);
+  }, 0);
+  console.log("totalAge", totalAge);
+  console.log("averageAge", totalAge / arr.length);
+}
