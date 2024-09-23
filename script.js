@@ -19,3 +19,12 @@ function getLongestString(arr) {
   }
   return longest;
 }
+function getStringsLongerThan(arr, length) {
+  let longer = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > length) {
+      longer.push(arr[i]);
+    }
+  }
+  return longer;
+}
