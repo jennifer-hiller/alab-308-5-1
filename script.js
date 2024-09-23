@@ -47,7 +47,7 @@ const data = [
 ];
 
 function sortByAge(arr) {
-  console.log(arr.sort((a, b) => a.age - b.age));
+  console.log(arr.sort((a, b) => Number(a.age) - Number(b.age)));
 }
 function occupationToJob(arr) {
   arr.map((obj) => {
