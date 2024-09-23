@@ -1,3 +1,4 @@
+// Part 1
 function getSum(arr) {
   let sum = 0;
   for (let i = 0; i < arr.length; i++) {
@@ -35,6 +36,8 @@ function allNumbersBetween1AndN(num, a = 1) {
     allNumbersBetween1AndN(num, a);
   }
 }
+
+// Part 2
 const data = [
   { id: "42", name: "Bruce", occupation: "Knight", age: "41" },
   { id: "48", name: "Barry", occupation: "Runner", age: "25" },
@@ -59,4 +62,20 @@ function getAges(arr) {
   }, 0);
   console.log("totalAge", totalAge);
   console.log("averageAge", totalAge / arr.length);
+}
+
+// Part 3
+function incrementAge(obj) {
+  if (!obj.age) {
+    obj.age = 0;
+  }
+  obj.age = Number(obj.age) + 1;
+}
+function incrementAgeCopy(obj) {
+  const copy = { ...obj };
+  if (!copy.age) {
+    copy.age = 0;
+  }
+  copy.age = Number(copy.age) + 1;
+  return copy;
 }
