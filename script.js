@@ -28,3 +28,10 @@ function getStringsLongerThan(arr, length) {
   }
   return longer;
 }
+function allNumbersBetween1AndN(num, a = 1) {
+  if (a <= num) {
+    console.log(a);
+    a++;
+    allNumbersBetween1AndN(num, a);
+  }
+}
