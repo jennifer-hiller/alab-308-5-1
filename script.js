@@ -5,3 +5,8 @@ function getSum(arr) {
   }
   return sum;
 }
+function getAverage(arr) {
+  let sum = getSum(arr);
+  let count = arr.length;
+  return sum / count;
+}
